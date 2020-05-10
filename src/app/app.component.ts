@@ -64,9 +64,8 @@ export class AppComponent {
   
  	 existeLetra(letra){
 		if(this.palabra.indexOf(letra) >= 0){
-			//console.log('La letra existe '+letra);
+			console.log('La letra existe '+letra);
 		}else{
-
 			this.intentos++;
   	}
   }
