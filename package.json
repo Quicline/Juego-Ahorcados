@@ -21,7 +21,10 @@
         "@angular/platform-browser-dynamic": "^8.2.14",
         "@angular/platform-server": "^8.2.14",
         "@angular/router": "^8.2.14",
+        "bulma": "^0.8.2",
         "core-js": "^3.6.4",
+        "ng2-toastr": "^4.1.2",
+        "pusher-js": "^6.0.2",
         "rxjs": "^6.5.4",
         "zone.js": "^0.10.2"
     },
