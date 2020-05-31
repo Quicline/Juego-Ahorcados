@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // firebaseConfig: {
+  //   apiKey: "AIzaSyBRNEpdqrGbbZR4D07HabSIx9xcfvfZDAw",
+  //   authDomain: "juegoahorcados.firebaseapp.com",
+  //   databaseURL: "https://juegoahorcados.firebaseio.com",
+  //   projectId: "juegoahorcados",
+  //   storageBucket: "juegoahorcados.appspot.com",
+  //   messagingSenderId: "768090293135",
+  //   appId: "1:768090293135:web:815210b857cb93605341fa",
+  //   measurementId: "G-689VK34GDP"
+  // }
 };
 
 /*

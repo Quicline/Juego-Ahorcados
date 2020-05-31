@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Palabras } from '../app/palabra';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,16 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 
-	palabras = ['PLACAMADRE',
-				'INFORMATICA',
-				'JAVASCRIPT',
-				'PROGRAMAR',
-				'PROGRAMACION',
-				'MONITOR'];
-	
+
+	palabras =
+	["PLACAMADRE",
+    "INFORMATICA",
+	"JAVASCRIPT",
+	"PROGRAMAR",
+	"PROGRAMACION",
+	"MONITOR"
+]
+
 	palabra = this.palabras[Math.floor(Math.random()*this.palabras.length)];
 
 	palabraOculta = '';
@@ -21,16 +25,20 @@ export class AppComponent {
 	intentos = 0;
 
 	gano = false;
-  	perdio = false;
+	perdio = false;
 
 	letras = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
-            'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S',
-            'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+	'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S',
+	'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
-  
-  constructor(){
-  	this.palabraOculta = '_ '.repeat(this.palabra.length);
-  }
+
+	constructor(){
+		this.palabraOculta = '_ '.repeat(this.palabra.length);
+	}
+
+	ngOnInit() {
+	}
+
 
     comprobar(letra){
 
@@ -45,7 +53,7 @@ export class AppComponent {
 		}
 		this.palabraOculta = palabraOcultaArr.join(' ');
 		this.verificaGane();
-  }
+  	}
 
 	verificaGane(){
 		const palabraArr = this.palabraOculta.split(' ');
@@ -60,9 +68,9 @@ export class AppComponent {
 			this.perdio = true;
 			console.log('Usuario PERDIO');
   	}
-  }
+}
   
- 	 existeLetra(letra){
+ 	existeLetra(letra){
 		if(this.palabra.indexOf(letra) >= 0){
 			console.log('La letra existe '+letra);
 		}else{
